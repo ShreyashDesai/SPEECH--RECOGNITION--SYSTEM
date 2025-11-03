@@ -1,25 +1,90 @@
-# SpeechToText - Wav2Vec2 Basic STT
+🧠 SPEECH-TO-TEXT SYSTEM
 
-## Objective
-A simple Speech-to-Text system using the pre-trained Wav2Vec2 model from Hugging Face.
-Transcribes short audio clips (WAV, mono, 16 kHz recommended) and outputs text.
+Company: CodTech IT Solutions
+Name: Shreyash Nhanu Desai
+Intern ID: CT04DR1291
 
-## Files
-- `speech_to_text.py` : main script
-- `sample.wav` : example audio file (replace with your own)
-- `output.txt` : transcription output (generated)
-- `requirements.txt` : Python dependencies
+Domain: Artificial Intelligence
+Duration: 4 Weeks
+Mentor: Neela Santosh
 
-## Setup
-1. Create and activate virtual environment:
-   - `python3 -m venv stt-env`
-   - `source stt-env/bin/activate` (Windows: `.\stt-env\Scripts\activate`)
+📘 Project Overview
 
-2. Install packages:
-   - `pip install -r requirements.txt`
+The Speech-to-Text System is an AI-based project that converts spoken audio into written text using pre-trained deep learning models.
+It demonstrates how modern Automatic Speech Recognition (ASR) models understand human speech and accurately generate transcriptions.
 
-3. Prepare audio:
-   - Ensure WAV, mono, 16kHz. Use ffmpeg to convert if needed:
-     `ffmpeg -i input.mp3 -ac 1 -ar 16000 sample.wav`
+This project is part of my CodTech Internship (AI Domain) and showcases practical use of NLP + Audio Processing with Transformers.
 
-## Usage
+🚀 Features
+
+🎤 Converts voice (WAV audio) into accurate text
+⚙️ Uses Wav2Vec2, a state-of-the-art speech recognition model
+💬 Works completely offline after model download
+🧩 Supports different accents and clear speech
+💾 Saves output text automatically into a file (output.txt)
+🔊 Accepts short audio clips in mono 16kHz WAV format
+
+🛠️ Technologies Used
+
+Programming Language: Python
+
+Libraries:
+
+transformers – For the Wav2Vec2 model
+
+torch – Deep learning backend
+
+librosa – Audio loading and resampling
+
+soundfile – Audio file support
+
+💻 How to Run
+1️⃣ Clone this repository
+git clone https://github.com/<your-username>/Speech-To-Text-System.git
+cd Speech-To-Text-System
+
+2️⃣ Install dependencies
+pip install torch transformers librosa soundfile
+
+3️⃣ Prepare your audio file
+
+Convert to mono, 16kHz WAV using ffmpeg (if needed):
+
+ffmpeg -i input.mp3 -ac 1 -ar 16000 sample.wav
+
+4️⃣ Run the script
+python speech_to_text.py --input sample.wav --output output.txt
+
+5️⃣ Check output
+
+Your transcription will be displayed on screen and saved in output.txt.
+
+🧩 Example Output
+
+Input:
+🎧 sample.wav — “Hello, this is my CodTech internship project.”
+
+Output:
+📝 hello this is my codtech internship project
+<img width="1873" height="495" alt="Image" src="https://github.com/user-attachments/assets/829776f9-82ea-4e41-8d6c-b3481698b43c" />
+
+🧠 Model Information
+
+Model: facebook/wav2vec2-base-960h
+
+Wav2Vec2 is a Transformer-based model developed by Facebook AI for Automatic Speech Recognition (ASR).
+It learns speech representations directly from raw audio data and transcribes speech efficiently and accurately.
+
+👨‍💻 Author
+
+Shreyash Desai
+Intern at CodTech IT Solutions
+📧 [shreyashsn.desai@gmail.com
+]
+🔗 GitHub Profile
+
+🔗 LinkedIn
+
+🏁 Acknowledgements
+
+I would like to thank CodTech IT Solutions and my mentor Neela Santosh for providing this opportunity, guidance, and valuable learning experience during my internship.
