@@ -45,36 +45,52 @@ torch – Deep learning backend
 librosa – Audio loading and resampling
 
 soundfile – Audio file support
+
 --
+
 💻 How to Run
 1️⃣ Clone this repository
 git clone https://github.com/Batman1as/Speech-To-Text-System.git
 cd Speech-To-Text-System
+
 --
+
 2️⃣ Install dependencies
 pip install torch transformers librosa soundfile
+
 --
+
 3️⃣ Prepare your audio file
 
 Convert to mono, 16kHz WAV using ffmpeg (if needed):
 
 ffmpeg -i input.mp3 -ac 1 -ar 16000 sample.wav
+
 --
+
 4️⃣ Run the script
 python speech_to_text.py --input sample.wav --output output.txt
+
 --
+
 5️⃣ Check output
 
 Your transcription will be displayed on screen and saved in output.txt.
+
 --
+
 🧩 Example Output
 
 Input:
 🎧 sample.wav — “Hello, this is my CodTech internship project.”
+
 --
+
 Output:
 📝 hello this is my codtech internship project
+
 --
+
 🧠 Model Information
 
 Model: facebook/wav2vec2-base-960h
@@ -97,5 +113,6 @@ Intern at CodTech IT Solutions
 🏁 Acknowledgements
 
 I would like to thank CodTech IT Solutions and my mentor Neela Santosh for providing this opportunity, guidance, and valuable learning experience during my internship.
+
 
 
