@@ -49,6 +49,9 @@ soundfile – Audio file support
 --
 
 💻 How to Run
+
+--
+
 1️⃣ Clone this repository
 git clone https://github.com/Batman1as/Speech-To-Text-System.git
 cd Speech-To-Text-System
@@ -113,6 +116,7 @@ Intern at CodTech IT Solutions
 🏁 Acknowledgements
 
 I would like to thank CodTech IT Solutions and my mentor Neela Santosh for providing this opportunity, guidance, and valuable learning experience during my internship.
+
 
 
 
