@@ -1,11 +1,18 @@
 🧠 Speech-to-Text System
 👨‍💻 Internship Project — CodTech IT Solutions
 
+
+
 Intern Name: Shreyash Nhanu Desai
+
 Intern ID: CT04DR1291
+
 Domain: Artificial Intelligence
+
 Duration: 1st November – 1st December (4 Weeks)
+
 Mentor: Neela Santosh
+
 
 <div align="center"> <img width="100%" alt="Speech-to-Text System" src="https://github.com/user-attachments/assets/829776f9-82ea-4e41-8d6c-b3481698b43c" /> </div>
 📘 Project Overview
@@ -147,3 +154,4 @@ OSError: [Errno -9996] Invalid input device	Check microphone connection or selec
 ⭐ Support
 
 If you found this project useful, please consider giving it a ⭐ on GitHub!
+
