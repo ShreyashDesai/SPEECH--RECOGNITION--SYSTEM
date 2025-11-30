@@ -112,9 +112,10 @@ This project converts human speech into text using the **Wav2Vec2 transformer mo
 
 ## 2️⃣ Clone the GitHub Repository
 
-```bash
+
 git clone https://github.com/ShreyashDesai/Speech-To-Text-System.git
 cd Speech-To-Text-System
+
 3️⃣ Install Required Python Libraries
 bash
 
@@ -195,4 +196,5 @@ git not recognized	Install Git & enable PATH
 Module import errors	Run pip install -r requirements.txt
 ffmpeg not found	Add C:\ffmpeg\bin to PATH
 Wrong audio format	Use WAV, mono, 16kHz
+
 
