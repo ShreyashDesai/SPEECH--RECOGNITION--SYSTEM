@@ -117,7 +117,7 @@ git clone https://github.com/ShreyashDesai/Speech-To-Text-System.git
 cd Speech-To-Text-System
 3️⃣ Install Required Python Libraries
 bash
-Copy code
+
 pip install torch transformers librosa soundfile ffmpeg-python sounddevice wavio
 🎧 Creating / Importing Audio
 ✅ Option 1 — Windows Voice Recorder
@@ -131,11 +131,11 @@ Move it into the project folder
 
 ✅ Option 2 — Convert MP3 to WAV (Mono, 16kHz)
 bash
-Copy code
+
 ffmpeg -i input.mp3 -ac 1 -ar 16000 sample.wav
 ✅ Option 3 — Record Audio Using Python
 python
-Copy code
+
 import sounddevice as sd
 import wavio
 
@@ -149,7 +149,7 @@ wavio.write("sample.wav", audio, fs, sampwidth=2)
 print("✅ Saved as sample.wav")
 ▶️ Running the Speech-to-Text Program
 bash
-Copy code
+
 python speech_to_text.py --input sample.wav --output output.txt
 📝 Example Output
 Input audio: “Hello, this is my CodTech internship project.”
@@ -157,7 +157,7 @@ Input audio: “Hello, this is my CodTech internship project.”
 Transcribed text:
 
 text
-Copy code
+
 hello this is my codtech internship project
 🧠 Model Information
 Detail	Information
@@ -195,3 +195,4 @@ git not recognized	Install Git & enable PATH
 Module import errors	Run pip install -r requirements.txt
 ffmpeg not found	Add C:\ffmpeg\bin to PATH
 Wrong audio format	Use WAV, mono, 16kHz
+
