@@ -1,4 +1,5 @@
 🧠 Speech-to-Text System
+--
 👨‍💻 Internship Project — CodTech IT Solutions
 --
 
@@ -165,4 +166,5 @@ Issue	Solution
 ModuleNotFoundError: torch	Run: pip install torch transformers
 ffmpeg: not found	Install FFmpeg & add to PATH
 OSError: -9996 Invalid input device	Check microphone or change audio device
+
 
