@@ -1,6 +1,7 @@
 🧠 Speech-to-Text System
+--
 👨‍💻 Internship Project — CodTech IT Solutions
-Intern Details
+--
 
 Intern Name: Shreyash Nhanu Desai
 
@@ -165,3 +166,4 @@ Issue	Solution
 ModuleNotFoundError: torch	Run → pip install torch transformers
 ffmpeg not found	Install FFmpeg and add to PATH
 OSError: -9996 Invalid input device	Select another microphone or check device
+
