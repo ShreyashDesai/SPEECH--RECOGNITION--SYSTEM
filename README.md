@@ -104,7 +104,7 @@ Copy code
 
 ```bash
 git clone https://github.com/ShreyashDesai/SPEECH--RECOGNITION--SYSTEM
-cd Speech-To-Text-System
+cd SPEECH--RECOGNITION--SYSTEM
 3️⃣ Install Python Dependencies
 bash
 Copy code
@@ -181,4 +181,5 @@ git not recognized	Reinstall Git with Add to PATH
 ModuleNotFoundError	Run: pip install torch transformers
 ffmpeg not found	Add C:\ffmpeg\bin to PATH
 OSError -9996	Change microphone or input device
+
 
