@@ -76,9 +76,11 @@ ffmpeg -version
 Step 2️⃣ — Clone the Repository
 git clone https://github.com/ShreyashDesai/Speech-To-Text-System.git
 cd Speech-To-Text-System
+--
 
 Step 3️⃣ — Install Required Libraries
 pip install torch transformers librosa soundfile
+--
 
 
 If audio issues appear:
@@ -88,6 +90,7 @@ pip install ffmpeg-python
 🎤 Creating / Importing Audio Samples
 
 You need a mono 16kHz WAV file.
+--
 
 Option 1 — Windows Voice Recorder
 
@@ -98,10 +101,11 @@ Record your audio
 Save as sample.wav
 
 Move the file into your project folder
+--
 
 Option 2 — Convert MP3 to WAV
 ffmpeg -i input.mp3 -ac 1 -ar 16000 sample.wav
-
+--
 Option 3 — Record Audio Using Python
 import sounddevice as sd
 import wavio
@@ -114,30 +118,31 @@ recording = sd.rec(int(duration * fs), samplerate=fs, channels=1)
 sd.wait()
 wavio.write("sample.wav", recording, fs, sampwidth=2)
 print("✅ Saved as sample.wav")
-
+--
 
 Install dependencies:
 
 pip install sounddevice wavio
-
+--
 ▶️ How to Run the Program
 python speech_to_text.py --input sample.wav --output output.txt
-
+--
 📝 Example Output
 Input Audio
 
 🎧 sample.wav — “Hello, this is my CodTech internship project.”
-
+--
 Transcribed Text
 
 🧾 hello this is my codtech internship project
-
+--
 🧠 Model Information
 Detail	Information
 Model Name	facebook/wav2vec2-base-960h
 Architecture	Transformer-based ASR
 Developed By	Facebook AI Research (FAIR)
 Purpose	Speech representation & transcription
+--
 👨‍💻 Author
 
 Name: Shreyash Nhanu Desai
@@ -147,7 +152,7 @@ Email: shreyashsn.desai@gmail.com
 🔗 GitHub: https://github.com/ShreyashDesai
 
 🔗 LinkedIn: https://linkedin.com/in/shreyash-desai-a13730384
-
+--
 🏁 Acknowledgements
 
 I thank CodTech IT Solutions and my mentor Neela Santosh for their valuable guidance and continuous support.
@@ -160,7 +165,7 @@ Deep Learning Architectures
 Practical Model Deployment
 
 Audio Signal Processing
-
+--
 ⚠️ Troubleshooting Guide
 Issue	Solution
 'pip' is not recognized	Reinstall Python & enable PATH
@@ -168,6 +173,7 @@ Issue	Solution
 ModuleNotFoundError: torch	Run: pip install torch transformers
 ffmpeg: not found	Install FFmpeg & add to PATH
 OSError: -9996 Invalid input device	Check microphone or change audio device
+--
 
 
 
