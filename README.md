@@ -104,21 +104,22 @@ Download: https://code.visualstudio.com/download
 
 ---
 
+# 🎤 Speech-To-Text System (Wav2Vec2)
+
+This project converts human speech into text using the **Wav2Vec2 transformer model**.
+
+---
+
 ## 2️⃣ Clone the GitHub Repository
+
 ```bash
 git clone https://github.com/ShreyashDesai/Speech-To-Text-System.git
 cd Speech-To-Text-System
-
---
-
 3️⃣ Install Required Python Libraries
 bash
-
+Copy code
 pip install torch transformers librosa soundfile ffmpeg-python sounddevice wavio
-
---
-
-🎤 Creating / Importing Audio
+🎧 Creating / Importing Audio
 ✅ Option 1 — Windows Voice Recorder
 Open Voice Recorder
 
@@ -128,40 +129,32 @@ Save file as sample.wav
 
 Move it into the project folder
 
---
 ✅ Option 2 — Convert MP3 to WAV (Mono, 16kHz)
 bash
 Copy code
 ffmpeg -i input.mp3 -ac 1 -ar 16000 sample.wav
-
---
-✅ Option 3 — Record Using Python
+✅ Option 3 — Record Audio Using Python
 python
+Copy code
 import sounddevice as sd
 import wavio
 
-duration = 5     # seconds
-fs = 16000       # sample rate
+duration = 5
+fs = 16000
 
 print("🎙️ Recording...")
 audio = sd.rec(int(duration * fs), samplerate=fs, channels=1)
 sd.wait()
 wavio.write("sample.wav", audio, fs, sampwidth=2)
 print("✅ Saved as sample.wav")
-
---
-
-▶️ How to Run the Speech-to-Text Program
+▶️ Running the Speech-to-Text Program
 bash
+Copy code
 python speech_to_text.py --input sample.wav --output output.txt
-
---
-
 📝 Example Output
-Input:
-🎧 sample.wav — “Hello, this is my CodTech internship project.”
+Input audio: “Hello, this is my CodTech internship project.”
 
-Transcription Output:
+Transcribed text:
 
 text
 Copy code
@@ -169,38 +162,36 @@ hello this is my codtech internship project
 🧠 Model Information
 Detail	Information
 Model	facebook/wav2vec2-base-960h
-Architecture	Transformer-based ASR
-Developed By	Facebook AI Research (FAIR)
-Purpose	Speech understanding & transcription
+Type	Transformer-based ASR
+Developer	Facebook AI Research
+Purpose	Speech Recognition
 
-👨‍💻 Author
+👤 Author
 Name: Shreyash Nhanu Desai
-Role: AI Intern — CodTech IT Solutions
+Role: AI Intern – CodTech IT Solutions
 📧 Email: shreyashsn.desai@gmail.com
 🔗 GitHub: https://github.com/ShreyashDesai
 🔗 LinkedIn: https://linkedin.com/in/shreyash-desai-a13730384
 
 🏁 Acknowledgements
-Special thanks to CodTech IT Solutions and Mentor Neela Santosh.
+Special thanks to CodTech IT Solutions and Mentor Neela Santosh for guidance through this internship.
 
-This project strengthened skills in:
+This project improved skills in:
 
 Speech Recognition
 
-Deep Learning Architectures
+Audio Preprocessing
 
-Transformer Models
+Transformers
 
-Audio Processing
+Deep Learning
 
-Python Model Deployment
+Deployment using Python
 
 ⚠️ Troubleshooting Guide
-Issue	Solution
-pip not recognized	Reinstall Python → enable PATH
-git not recognized	Reinstall Git → enable PATH
-ModuleNotFoundError	Run: pip install torch transformers
+Issue	Fix
+pip not recognized	Reinstall Python & enable PATH
+git not recognized	Install Git & enable PATH
+Module import errors	Run pip install -r requirements.txt
 ffmpeg not found	Add C:\ffmpeg\bin to PATH
-OSError -9996	Change microphone / input device
-Audio unreadable	Ensure WAV, mono, 16kHz format
-
+Wrong audio format	Use WAV, mono, 16kHz
